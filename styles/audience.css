@@ -1,0 +1,128 @@
+.audience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--color-whiteGrey);
+    align-items: center;
+}
+
+
+.audience__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+
+
+    text-align: center;
+}
+
+.audience__visitors {
+
+    height: 34px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.audience__header {
+    width: 555px;
+    height: 112px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+.audience__text {
+    width: 555px;
+    height: 72px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.audience__categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr, minmax(200px, 1fr));
+    grid-template-rows: 300px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 60px auto;
+}
+
+
+
+
+.categories__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 262px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    margin-right: 30px;
+}
+
+
+.categories__content--backgraund {
+    background-color: var(--color-blueViolet);
+
+}
+
+.categories__text {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categories__face {
+    animation-name: image-face;  /*имя анимации*/
+    animation-duration: 7s;     /*время прохода анимации*/
+    animation-delay: 3s;     /*начало анимации */
+    animation-iteration-count: infinite; /*повтор анимации*/
+}
+
+.categories__lightBulb {
+    animation-name: lightBulb;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.categories__athletes {
+    animation-name: athletes;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes athletes {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(360deg);}
+}
+
+@keyframes lightBulb {
+    0% {transform: rotateX(0deg);}
+    100% {transform: rotateX(360deg);}
+
+}
+
+@keyframes image-face {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(360deg);}
+    100% {transform: rotateY(360deg);}
+
+}
+
+.categories__text:hover {
+    background: var(--color-olivia);
+    border-radius: 7px;
+}

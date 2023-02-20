@@ -1,0 +1,16 @@
+:root {
+    --color-ping: #F9D9EB;
+    --color-lightBlue: #edf8fb;
+    --color-grey: #F4F5F7;
+    --color-black: #2B292D;
+    --color-blue: #3040C4;
+    --color-white: #FFFFFF;
+    --color-greyBlack: #2B292D;
+    --color-olivia: rgb(223, 223, 118);
+    --color-blueViolet: rgb(73, 73, 250);
+    --color-blackBlue: #3141c5;
+    --color-whiteGrey: #f4f5f7;
+
+    --font-family-workSans: 'Work Sans', sans-serif;
+}
+
